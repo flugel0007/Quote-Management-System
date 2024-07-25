@@ -71,9 +71,12 @@ public class Main {
 
                 case 5: 
                     System.out.println("See You Again Fellow Traveller");
+                    scanner.close();
+                    return;
 
                 default: 
                     System.out.println("Error. Try Again");
+                break;
 
             }
         }

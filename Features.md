@@ -58,3 +58,7 @@
 - **Add a cancel action Mid-Operation**
 
     - to allow misclicks to be cancelled.
+
+- **Error Handler for switch**
+
+    - when switch input is not an int.
