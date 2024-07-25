@@ -39,4 +39,13 @@ public class QuoteManager {
             System.out.println("Couldn't Find the Quote you were looking for. Try again perhaps :D");
         }
     }
+    public void deleteQuote(int index) {
+        if (index >= 0 && index < quotes.size()) {
+            quotes.remove(index);
+            System.out.println("Quote Removed :( ).");
+        } else {
+            System.out.println("Quote not found. :( )");
+        }
+    }
+
 }

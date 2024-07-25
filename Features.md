@@ -13,17 +13,15 @@
 
     - Allows users to edit an existing quote by specifying its index, new text, author, and link.
 
+- **Delete Quotes**
+
+    - Implement functionality to remove a quote by specifying its index.
 
 - **Exit**
 
     - Exits the application with a farewell message.
 
 ### Features to Add
-
-
-- **Delete Quotes**
-
-    - Implement functionality to remove a quote by specifying its index.
 
 - **Search Quotes**
 

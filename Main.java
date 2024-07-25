@@ -10,7 +10,8 @@ public class Main {
             System.out.println("1. Add Quote");
             System.out.println("2. Display All Quotes");
             System.out.println("3. Edit Quote");
-            System.out.println("4. Exit");
+            System.out.println("4. Delete Quote");
+            System.out.println("5. Exit");
             System.out.print("Choose Option:");
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -55,8 +56,20 @@ public class Main {
 
                     break;
 
+                
+                case 4:
+                    quoteManager.displayQuotes();
+                    System.out.println("Which Quote would u like to remove? :D");
+                    int delIndex = scanner.nextInt()-1;
+                    scanner.nextLine();
 
-                case 4: 
+                    if(delIndex>=0 && delIndex < quoteManager.quotes.size()){
+                        quoteManager.deleteQuote(delIndex);
+                    } else {
+                        System.out.println("Couldn't Find the Quote you were looking for. Try again perhaps :D");
+                    }
+
+                case 5: 
                     System.out.println("See You Again Fellow Traveller");
 
                 default: 
