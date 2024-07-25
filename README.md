@@ -9,6 +9,6 @@ A Java-based quote management system with features to add, edit, and display quo
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/yourusername/quote-management-system.git`
+1. Clone the repository: `git clone https://github.com/flugel0007/Quote-Management-System`
 2. Navigate to the project directory
 3. Compile and run the Java files
