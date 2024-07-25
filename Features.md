@@ -9,16 +9,16 @@
 
     - Displays all the quotes in the system.
 
+- **Edit Quote** 
+
+    - Allows users to edit an existing quote by specifying its index, new text, author, and link.
+
 
 - **Exit**
 
     - Exits the application with a farewell message.
 
 ### Features to Add
-
-- **Edit Quote** *(Working on it)*
-
-    - Allows users to edit an existing quote by specifying its index, new text, author, and link.
 
 
 - **Delete Quotes**
@@ -56,3 +56,7 @@
 - **Import and Export Quotes**
 
     - Allow importing and exporting quotes in formats like CSV or JSON.
+
+- **Add a cancel action Mid-Operation**
+
+    - to allow misclicks to be cancelled.

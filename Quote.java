@@ -32,7 +32,7 @@ public class Quote{
     }
     @Override
     public String toString(){
-        return "Quote: " + mainText + "\n" + "From: " + from + "\n" + "Link: " + link + "\n";
+        return "Quote: " + mainText + "\n" + "   From: " + from + "\n" + "   Link: " + link + "\n";
     }
     
 }

@@ -9,7 +9,8 @@ public class Main {
             System.out.println("\n Main Menu");
             System.out.println("1. Add Quote");
             System.out.println("2. Display All Quotes");
-            System.out.println("3. Exit");
+            System.out.println("3. Edit Quote");
+            System.out.println("4. Exit");
             System.out.print("Choose Option:");
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -30,6 +31,32 @@ public class Main {
                     break;
 
                 case 3: 
+                    quoteManager.displayQuotes();
+                    System.out.print("Which Quote would you like to edit? :");
+                    int index = scanner.nextInt() -1;
+                    scanner.nextLine();
+
+                    if (index >= 0 && index < quoteManager.quotes.size()) {
+                        Quote oldQuote = quoteManager.quotes.get(index);
+                        System.out.println("Current Quote:");
+                        System.out.println("   "+oldQuote);
+
+                        System.out.print("Enter new quote text (leave blank to keep current): ");
+                        String newQuoteText = scanner.nextLine();
+                        System.out.print("Enter new author (leave blank to keep current): ");
+                        String newAuthor = scanner.nextLine();
+                        System.out.print("Enter new link (leave blank to keep current): ");
+                        String newLink = scanner.nextLine();
+
+                        quoteManager.editQuote(index, newQuoteText, newAuthor, newLink);
+                    } else {
+                        System.out.println("Invalid index. Quote not found.");
+                    }
+
+                    break;
+
+
+                case 4: 
                     System.out.println("See You Again Fellow Traveller");
 
                 default: 
