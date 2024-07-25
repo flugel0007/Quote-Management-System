@@ -16,7 +16,7 @@
 
 ### Features to Add
 
-- **Edit Quote** 
+- **Edit Quote** *(Working on it)*
 
     - Allows users to edit an existing quote by specifying its index, new text, author, and link.
 
